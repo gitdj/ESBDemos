@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESBFrameWorkDemo", "ESBFrameWorkDemo\ESBFrameWorkDemo.btproj", "{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESBFrameWorkDemo.UtilityHelper", "ESBFrameWorkDemo.UtilityHelper\ESBFrameWorkDemo.UtilityHelper.csproj", "{32457E41-9EE3-4316-AADA-1425129B47B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESBFrameWorkDemo.Itineraries", "ESBFrameWorkDemo.Itineraries\ESBFrameWorkDemo.Itineraries.csproj", "{F5098B5F-A1BF-4EE7-AC72-F28FE59B778A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTConsumeRestfulWithDynSP", "BTConsumeRestfulWithDynSP\BTConsumeRestfulWithDynSP.btproj", "{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.WebHttpAdapterProvider", "ESB.WebHttpAdapterProvider\ESB.WebHttpAdapterProvider.csproj", "{EF579BDB-96A5-4D7A-AD3E-EDEE615CE155}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFD6E398-35F6-43B1-B152-360D22756552}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BC7F29-C2EA-4977-8AD8-068D5AFC36D3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32457E41-9EE3-4316-AADA-1425129B47B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32457E41-9EE3-4316-AADA-1425129B47B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32457E41-9EE3-4316-AADA-1425129B47B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32457E41-9EE3-4316-AADA-1425129B47B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5098B5F-A1BF-4EE7-AC72-F28FE59B778A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5098B5F-A1BF-4EE7-AC72-F28FE59B778A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5098B5F-A1BF-4EE7-AC72-F28FE59B778A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5098B5F-A1BF-4EE7-AC72-F28FE59B778A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5285C66-BBEE-42DB-B9EE-9667A3ACAB7C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EF579BDB-96A5-4D7A-AD3E-EDEE615CE155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF579BDB-96A5-4D7A-AD3E-EDEE615CE155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF579BDB-96A5-4D7A-AD3E-EDEE615CE155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF579BDB-96A5-4D7A-AD3E-EDEE615CE155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

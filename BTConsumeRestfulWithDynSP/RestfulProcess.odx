@@ -1,0 +1,371 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="d347e3e4-ed9f-427f-97e5-0f532532921f" LowerBound="1.1" HigherBound="84.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BTConsumeRestfulWithDynSP" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="c5003a04-6270-44a3-9edc-d06385132c23" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_In" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b2265895-fa30-4214-8d65-f5fda25a6d97" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c1c063e7-d236-4f74-a792-772d58b4d38d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.19">
+                    <om:Property Name="Ref" Value="BTConsumeRestfulWithDynSP.ReqMsg" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e7e3c82a-8d69-4b15-84a6-aeb8985a7e71" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7a0cceb6-d636-4b6c-aec0-e4d72eb545e9" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e35ac13b-eb39-4ff4-9831-f50505419886" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.43">
+                    <om:Property Name="Ref" Value="Microsoft.XLANGs.BaseTypes.Any" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5419658d-9db0-4031-9ff5-39529967d4a7" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.45" HigherBound="15.75">
+                    <om:Property Name="Ref" Value="Microsoft.XLANGs.BaseTypes.Any" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3c39cb43-dc84-4447-bbf1-e253032a5c8d" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f0bba758-f50b-4668-8c8c-2eeb0744f5b2" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="StaticGet" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="e7084844-4b99-4174-bb95-fbdaa060349e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.43">
+                    <om:Property Name="Ref" Value="Microsoft.XLANGs.BaseTypes.Any" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="4ad5baa0-2620-46b5-9a40-2c132a56b5d4" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="22.45" HigherBound="22.75">
+                    <om:Property Name="Ref" Value="Microsoft.XLANGs.BaseTypes.Any" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="11c59d0e-b9ff-493d-af54-503cbaf6aded" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="83.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestfulProcess" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="c7dfe6dc-4d95-4d76-b85a-023b90ac54eb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="Type" Value="Microsoft.XLANGs.BaseTypes.Any" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="anyMsgReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7dcf01b1-a6c1-4e17-b3a3-fb82e6eec545" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="Type" Value="Microsoft.XLANGs.BaseTypes.Any" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="anyMsgRes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5c0fcb4f-eb03-4e39-bb67-1f880d01e35f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="Type" Value="BTConsumeRestfulWithDynSP.ReqMsg" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="anyMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="e9f9162e-e4f2-4978-b1da-8d9d2b0e9971" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="1019940b-baf8-4100-a94e-198b81c47cd4" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="41.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_In" />
+                    <om:Property Name="MessageName" Value="anyMsg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="9ce43c05-67c7-40f8-9793-3dec6e7ae477" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="43.1">
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BT&quot;,&quot;Rcved&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="8405153d-c63d-48ff-9b2c-1b65f6fca2d2" ParentLink="ServiceBody_Statement" LowerBound="43.1" HigherBound="79.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="42b34fee-d027-48d9-b8ad-e47dbf737c17" ParentLink="ReallyComplexStatement_Branch" LowerBound="44.13" HigherBound="64.1">
+                        <om:Property Name="Expression" Value="anyMsg.Type==&quot;Dyn&quot;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rule_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="d666d764-7ace-4f20-b8f8-829063fa6db7" ParentLink="ComplexStatement_Statement" LowerBound="46.1" HigherBound="57.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="383121ff-ad49-43d8-b79a-509aa967e11f" ParentLink="ComplexStatement_Statement" LowerBound="49.1" HigherBound="56.1">
+                                <om:Property Name="Expression" Value="anyMsgReq = xpath(anyMsg,&quot;/*&quot;);&#xD;&#xA;anyMsgReq(WCF.SecurityMode) = &quot;Transport&quot;;&#xD;&#xA;anyMsgReq(WCF.SuppressMessageBodyForHttpVerbs)=&quot;GET&quot;;&#xD;&#xA;anyMsgReq(WCF.HttpMethodAndUrl)= &quot;GET&quot;;&#xD;&#xA;Port_DynPort(Microsoft.XLANGs.BaseTypes.Address)= &quot;https://reqres.in/api/users/2&quot;;&#xD;&#xA;Port_DynPort(Microsoft.XLANGs.BaseTypes.TransportType)=&quot;WCF-Webhttp&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="ab90ed19-1173-4ca7-a2d1-d61cbf3c39cf" ParentLink="Construct_MessageRef" LowerBound="47.27" HigherBound="47.36">
+                                <om:Property Name="Ref" Value="anyMsgReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="40a512d7-fdde-4527-be1b-71986c6d3b3c" ParentLink="ComplexStatement_Statement" LowerBound="57.1" HigherBound="59.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BT&quot;,&quot;Sending..&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="986d2924-68d6-4b39-97d8-501282e3c70b" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="61.1">
+                            <om:Property Name="PortName" Value="Port_DynPort" />
+                            <om:Property Name="MessageName" Value="anyMsgReq" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="b79437a3-419c-43da-9472-6eaeedd10bf2" ParentLink="ComplexStatement_Statement" LowerBound="61.1" HigherBound="63.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_DynPort" />
+                            <om:Property Name="MessageName" Value="anyMsgRes" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="999a32c0-e7fb-4a0b-9da9-ab3db588309f" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="62db54a4-bee2-45d5-ab1d-18fbc0783b05" ParentLink="ComplexStatement_Statement" LowerBound="66.1" HigherBound="72.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_3" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="be5ee7c5-10d5-4017-9350-9b00c2b2296b" ParentLink="ComplexStatement_Statement" LowerBound="69.1" HigherBound="71.1">
+                                <om:Property Name="Expression" Value="anyMsgReq = xpath(anyMsg,&quot;/*&quot;);" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_2" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="98a60f54-a35a-4962-83df-0e16eb5ada02" ParentLink="Construct_MessageRef" LowerBound="67.27" HigherBound="67.36">
+                                <om:Property Name="Ref" Value="anyMsgReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="5e18a4ea-e142-4e5e-9ff1-029d694b5908" ParentLink="ComplexStatement_Statement" LowerBound="72.1" HigherBound="74.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BT&quot;,&quot;Sending..&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Expression_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="36a62463-e9ab-4c4c-bff7-344429b43af1" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="76.1">
+                            <om:Property Name="PortName" Value="SendRestPort" />
+                            <om:Property Name="MessageName" Value="anyMsgReq" />
+                            <om:Property Name="OperationName" Value="StaticGet" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="3944c3b7-0113-4e63-9206-69849c582a87" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="78.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="SendRestPort" />
+                            <om:Property Name="MessageName" Value="anyMsgRes" />
+                            <om:Property Name="OperationName" Value="StaticGet" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="38d24843-7f10-45b6-b544-d56b5103c8c6" ParentLink="ServiceBody_Statement" LowerBound="79.1" HigherBound="81.1">
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BT&quot;,&quot;Respond Rcvd..&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f8450693-c1bd-4926-a438-236745d91471" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="28.1" HigherBound="30.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTConsumeRestfulWithDynSP.PortType_In" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_In" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ba1d42db-2a74-44dd-ba18-3f6eeda49108" ParentLink="PortDeclaration_CLRAttribute" LowerBound="28.1" HigherBound="29.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a83a6601-9b21-46a6-b4b5-644497ec3d7a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="30.1" HigherBound="32.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="10" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTConsumeRestfulWithDynSP.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_DynPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="206f7d0c-fb3c-4f9c-9b55-70581de0822e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="30.1" HigherBound="31.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLReceive" />
+                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLTransmit" />
+                    <om:Property Name="TransportType" Value="HTTP" />
+                    <om:Property Name="URI" Value="http://tempURI" />
+                    <om:Property Name="IsDynamic" Value="True" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="19354ea6-0184-4865-89f8-df1fdbd53480" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="32.1" HigherBound="34.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="9" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BTConsumeRestfulWithDynSP.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendRestPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8aa0df50-7e59-44e7-a1e3-82e7f0a7417d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="32.1" HigherBound="33.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BTConsumeRestfulWithDynSP
+{
+    internal porttype PortType_In
+    {
+        oneway Operation_1
+        {
+            ReqMsg
+        };
+    };
+    internal porttype PortType_1
+    {
+        requestresponse Operation_1
+        {
+            Microsoft.XLANGs.BaseTypes.Any, Microsoft.XLANGs.BaseTypes.Any
+        };
+    };
+    internal porttype PortType_2
+    {
+        requestresponse StaticGet
+        {
+            Microsoft.XLANGs.BaseTypes.Any, Microsoft.XLANGs.BaseTypes.Any
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service RestfulProcess
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_In Port_In;
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding(typeof(Microsoft.BizTalk.DefaultPipelines.XMLReceive), typeof(Microsoft.BizTalk.DefaultPipelines.XMLTransmit))]
+        port uses dynamic PortType_1 Port_DynPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 SendRestPort;
+        message Microsoft.XLANGs.BaseTypes.Any anyMsgReq;
+        message Microsoft.XLANGs.BaseTypes.Any anyMsgRes;
+        message ReqMsg anyMsg;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1019940b-baf8-4100-a94e-198b81c47cd4")]
+            activate receive (Port_In.Operation_1, anyMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9ce43c05-67c7-40f8-9793-3dec6e7ae477")]
+            System.Diagnostics.EventLog.WriteEntry("BT","Rcved");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8405153d-c63d-48ff-9b2c-1b65f6fca2d2")]
+            if (anyMsg.Type=="Dyn")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d666d764-7ace-4f20-b8f8-829063fa6db7")]
+                construct anyMsgReq
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("383121ff-ad49-43d8-b79a-509aa967e11f")]
+                    anyMsgReq = xpath(anyMsg,"/*");
+                    anyMsgReq(WCF.SecurityMode) = "Transport";
+                    anyMsgReq(WCF.SuppressMessageBodyForHttpVerbs)="GET";
+                    anyMsgReq(WCF.HttpMethodAndUrl)= "GET";
+                    Port_DynPort(Microsoft.XLANGs.BaseTypes.Address)= "https://reqres.in/api/users/2";
+                    Port_DynPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Webhttp";
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("40a512d7-fdde-4527-be1b-71986c6d3b3c")]
+                System.Diagnostics.EventLog.WriteEntry("BT","Sending..");
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("986d2924-68d6-4b39-97d8-501282e3c70b")]
+                send (Port_DynPort.Operation_1, anyMsgReq);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b79437a3-419c-43da-9472-6eaeedd10bf2")]
+                receive (Port_DynPort.Operation_1, anyMsgRes);
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("62db54a4-bee2-45d5-ab1d-18fbc0783b05")]
+                construct anyMsgReq
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("be5ee7c5-10d5-4017-9350-9b00c2b2296b")]
+                    anyMsgReq = xpath(anyMsg,"/*");
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5e18a4ea-e142-4e5e-9ff1-029d694b5908")]
+                System.Diagnostics.EventLog.WriteEntry("BT","Sending..");
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("36a62463-e9ab-4c4c-bff7-344429b43af1")]
+                send (SendRestPort.StaticGet, anyMsgReq);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("3944c3b7-0113-4e63-9206-69849c582a87")]
+                receive (SendRestPort.StaticGet, anyMsgRes);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("38d24843-7f10-45b6-b544-d56b5103c8c6")]
+            System.Diagnostics.EventLog.WriteEntry("BT","Respond Rcvd..");
+        }
+    }
+}
+

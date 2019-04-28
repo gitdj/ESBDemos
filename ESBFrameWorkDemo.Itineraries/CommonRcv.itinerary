@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<itineraryModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c9cf0742-e7a5-4b4b-8314-c23f2ec891e4" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;XmlExporter&quot;&gt;&#xD;&#xA;    &lt;File&gt;C:\Users\Daniel\Documents\My Itineraries\CommonRcv.xml&lt;/File&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;DbExporter&quot;&gt;&#xD;&#xA;    &lt;Status&gt;Deployed&lt;/Status&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="CommonRcv" isRequestResponse="false" exportMode="Default" modelExporter="Exporter|Database Itinerary Exporter|{2ed729f7-1700-4755-a307-d83a358390fa}" encryptionCertificate="My;CurrentUser;" requireEncryptionCertificate="false" xmlns="http://schemas.microsoft.com/dsltools/ItineraryDsl">
+  <itineraryServices>
+    <itineraryModelHasItineraryServices Id="28df34e4-da19-448d-bdf9-f027e40b339c">
+      <itineraryService Id="729ffa2d-e2dc-46ee-8a54-2dfe8c6599ba" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;OrchestrationItineraryService&quot;&gt;&#xD;&#xA;    &lt;ServiceName&gt;GatewayProcess&lt;/ServiceName&gt;&#xD;&#xA;    &lt;ServiceId&gt;BA03BDC8-4EEA-4FD5-BE99-DDBD215146DA&lt;/ServiceId&gt;&#xD;&#xA;    &lt;ServiceType&gt;Orchestration&lt;/ServiceType&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="ItineraryService1" isRequestResponse="false" itineraryServiceExtender="Orchestration|Orchestration Extender|{b31c7ea2-1674-41e7-8bc2-80fa76f86790}" isTrackingEnabled="false">
+        <resolvers>
+          <itineraryServiceHasResolvers Id="be4c0062-5062-409b-bd70-928f0068c191">
+            <resolver Id="55ba908c-3467-4f23-ad77-9bc4cdaf4e72" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;ObjectExtenders xsi:type=&quot;SsoResolver&quot;&gt;&lt;JaxRpcResponse&gt;false&lt;/JaxRpcResponse&gt;&lt;/ObjectExtenders&gt;&lt;ObjectExtenders xsi:type=&quot;StaticResolver&quot;&gt;&lt;TransportType&gt;FILE&lt;/TransportType&gt;&lt;TransportLocation&gt;E:\POCs\DotNet\ESBFrameWorkDemo\Out\%MessageID%.xml&lt;/TransportLocation&gt;&lt;JaxRpcResponse&gt;false&lt;/JaxRpcResponse&gt;&lt;TransformType&gt;ESBFrameWorkDemo.BuildCanMsg,ESBFrameWorkDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23b4c7cdeeb0c5a7&lt;/TransformType&gt;&lt;/ObjectExtenders&gt;&lt;/ObjectExtenderContainer&gt;" name="StaticResolver" resolverImplementation="STATIC|Static Resolver Extension|{5761a0bc-cbe3-47e0-adf7-bb10c4e226fe}" />
+          </itineraryServiceHasResolvers>
+        </resolvers>
+        <targetItineraryService>
+          <itineraryServiceReferencesTargetItineraryService Id="aaf623e5-0591-428a-b561-bbbfbb6bbde8">
+            <itineraryServiceMoniker Id="81b832aa-2fc3-4dfc-8db9-7bd025b9c891" />
+          </itineraryServiceReferencesTargetItineraryService>
+        </targetItineraryService>
+      </itineraryService>
+    </itineraryModelHasItineraryServices>
+    <itineraryModelHasItineraryServices Id="cfb153da-6544-4f12-a76c-90dfb9fc5709">
+      <itineraryService Id="81b832aa-2fc3-4dfc-8db9-7bd025b9c891" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;OrchestrationItineraryService&quot;&gt;&#xD;&#xA;    &lt;ServiceName&gt;EnricherProcess&lt;/ServiceName&gt;&#xD;&#xA;    &lt;ServiceId&gt;48620795-2874-4D29-84A7-A3D3FEA74A68&lt;/ServiceId&gt;&#xD;&#xA;    &lt;ServiceType&gt;Orchestration&lt;/ServiceType&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="ItineraryService2" isRequestResponse="false" itineraryServiceExtender="Orchestration|Orchestration Extender|{b31c7ea2-1674-41e7-8bc2-80fa76f86790}" isTrackingEnabled="false">
+        <resolvers>
+          <itineraryServiceHasResolvers Id="bdde95e9-c115-4fce-852e-dcc03dac5b0d">
+            <resolver Id="cb5d9f0c-e77c-4101-8a62-4fe97abfb5b1" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;ObjectExtenders xsi:type=&quot;StaticResolver&quot;&gt;&lt;TransportType&gt;FILE&lt;/TransportType&gt;&lt;TransportLocation&gt;E:\POCs\DotNet\ESBFrameWorkDemo\Out\%MessageID%.xml&lt;/TransportLocation&gt;&lt;JaxRpcResponse&gt;false&lt;/JaxRpcResponse&gt;&lt;TransformType&gt;ESBFrameWorkDemo.BuildCanMsg,ESBFrameWorkDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23b4c7cdeeb0c5a7&lt;/TransformType&gt;&lt;/ObjectExtenders&gt;&lt;/ObjectExtenderContainer&gt;" name="Static" resolverImplementation="STATIC|Static Resolver Extension|{5761a0bc-cbe3-47e0-adf7-bb10c4e226fe}" />
+          </itineraryServiceHasResolvers>
+        </resolvers>
+      </itineraryService>
+    </itineraryModelHasItineraryServices>
+  </itineraryServices>
+  <onRamp>
+    <itineraryModelHasOnRamp Id="5d4bc74d-2c46-42ed-bcc1-ef68d7f94d5c">
+      <onRamp Id="c66bdffd-453a-49f7-bab2-254cf4d3028e" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;OnRampExtender&quot;&gt;&#xD;&#xA;    &lt;BiztalkApplication&gt;ESBFrameWorkDemo&lt;/BiztalkApplication&gt;&#xD;&#xA;    &lt;ReceivePort&gt;ESBFrameWorkDemoRcv&lt;/ReceivePort&gt;&#xD;&#xA;    &lt;IsTwoWay&gt;false&lt;/IsTwoWay&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="OnRamp1" extender="On-Ramp|On-Ramp ESB Extender|{3d237d78-fd66-46cd-b892-5a6e1e8ea06d}">
+        <request>
+          <onRampReferencesRequest Id="b8939425-e65e-42bc-979e-687f3d1120d5">
+            <itineraryServiceMoniker Id="729ffa2d-e2dc-46ee-8a54-2dfe8c6599ba" />
+          </onRampReferencesRequest>
+        </request>
+      </onRamp>
+    </itineraryModelHasOnRamp>
+  </onRamp>
+</itineraryModel>

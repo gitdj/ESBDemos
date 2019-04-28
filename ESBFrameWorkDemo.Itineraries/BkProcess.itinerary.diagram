@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<itineraryDslDiagram dslVersion="1.0.0.0" Id="97e230fa-f6fa-4da7-bef7-40a309f213bb" absoluteBounds="0, 0, 11, 8.5" name="BkProcess">
+  <itineraryModelMoniker Id="5013b724-1e6b-4107-b9e7-7f7878422f09" />
+  <nestedChildShapes>
+    <onRampShape Id="aef7d890-e692-482b-989a-620713b3d351" absoluteBounds="1.875, 1.5, 1.5, 1.018779296875">
+      <onRampMoniker Id="0a148255-7fc5-468b-b7bc-5e526c8e2991" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57a4b441-0dec-419d-9a30-f1daeab1a298" absoluteBounds="1.8900000000000001, 1.9100000000000001, 1.4700000000000002, 0.2493896484375" name="ReceiveCompartment" titleTextColor="Black" itemTextColor="Indigo" />
+        <elementListCompartment Id="172af8fc-ce5c-4bf0-8fa9-f9f56d3b8b18" absoluteBounds="1.8900000000000001, 2.1693896484375, 1.4700000000000002, 0.2493896484375" name="SendCompartment" titleTextColor="Black" itemTextColor="DarkViolet" />
+      </nestedChildShapes>
+    </onRampShape>
+    <itineraryServiceShape Id="e56a38c1-607f-4e66-93d9-3a5291adf2d7" absoluteBounds="5, 1.75, 1.625, 0.95169108072916675" fillColor="PaleGreen" outlineDashStyle="Solid" outlineThickness="0.0125">
+      <itineraryServiceMoniker Id="c402239c-0e9a-421d-9f95-3404b8b99c02" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f01d2175-eefa-49e8-9a5d-e85c54456fdc" absoluteBounds="5.015, 2.16, 1.5950000000000002, 0.44169108072916663" name="Resolver" titleTextColor="Black" itemTextColor="SteelBlue" />
+      </nestedChildShapes>
+    </itineraryServiceShape>
+    <connector Id="510b523a-b522-4213-a1d4-1aa96bce63b0" edgePoints="[(3.375 : 2.1343896484375); (5 : 2.1343896484375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <onRampReferencesRequestMoniker Id="f0ca6f28-5845-4eed-9cc1-3bf85518d63a" />
+      <nodes>
+        <onRampShapeMoniker Id="aef7d890-e692-482b-989a-620713b3d351" />
+        <itineraryServiceShapeMoniker Id="e56a38c1-607f-4e66-93d9-3a5291adf2d7" />
+      </nodes>
+    </connector>
+  </nestedChildShapes>
+</itineraryDslDiagram>

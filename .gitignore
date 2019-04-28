@@ -1,0 +1,10 @@
+
+*.dll
+obj
+bin
+debug
+BTConsumeRestfulWithDynSP/obj/Debug/BTConsumeRestfulWithDynSP.btproj.FileListAbsolute.txt
+*.xsd.cs
+*.btp.cs
+*.btm.cs
+*.odx.cs

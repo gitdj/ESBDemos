@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<itineraryDslDiagram dslVersion="1.0.0.0" Id="9ff6cf99-d8b7-4fac-85e4-6a63b89b445c" absoluteBounds="0, 0, 11, 8.5" name="ESBRestfulOdx">
+  <itineraryModelMoniker Id="a1cc6da2-1224-41eb-b152-065c04ab492b" />
+  <nestedChildShapes>
+    <itineraryServiceShape Id="a0a4aeac-3924-417b-957e-fd21c2671056" absoluteBounds="3.625, 1.5, 1.625, 0.95169108072916675" fillColor="PaleGreen" outlineDashStyle="Solid" outlineThickness="0.0125">
+      <itineraryServiceMoniker Id="7b07c374-fc1b-4878-af03-66f7cf79b337" />
+      <nestedChildShapes>
+        <elementListCompartment Id="621c8607-9290-4d59-9f98-de1b1538cd6a" absoluteBounds="3.64, 1.9100000000000001, 1.5950000000000002, 0.44169108072916663" name="Resolver" titleTextColor="Black" itemTextColor="SteelBlue" />
+      </nestedChildShapes>
+    </itineraryServiceShape>
+    <onRampShape Id="2ca5671c-4339-4dda-9a10-6f433c7e7a22" absoluteBounds="0.75, 1.375, 1.5, 1.018779296875">
+      <onRampMoniker Id="ad2c47c6-457b-457c-a98b-81cb3ce5fbc7" />
+      <nestedChildShapes>
+        <elementListCompartment Id="011d1a4b-40b8-4dca-816a-91717f328606" absoluteBounds="0.765, 1.7850000000000001, 1.4700000000000002, 0.2493896484375" name="ReceiveCompartment" titleTextColor="Black" itemTextColor="Indigo" />
+        <elementListCompartment Id="f4748c81-e86b-4c4c-9993-e75c0598379e" absoluteBounds="0.765, 2.0443896484375, 1.4700000000000002, 0.2493896484375" name="SendCompartment" titleTextColor="Black" itemTextColor="DarkViolet" />
+      </nestedChildShapes>
+    </onRampShape>
+    <connector Id="cb935f5b-a2bf-4775-831b-eb529c406009" edgePoints="[(2.25 : 2.10880645751953); (3.625 : 2.10880645751953)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <onRampReferencesRequestMoniker Id="df4dc8ad-79e7-418e-9e46-73c60b0b5efc" />
+      <nodes>
+        <onRampShapeMoniker Id="2ca5671c-4339-4dda-9a10-6f433c7e7a22" />
+        <itineraryServiceShapeMoniker Id="a0a4aeac-3924-417b-957e-fd21c2671056" />
+      </nodes>
+    </connector>
+    <connector Id="695d256c-6010-4432-b02c-3badcf1c2c52" edgePoints="[(3.625 : 1.74190322875977); (2.25 : 1.74190322875977)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <responseReferencedByOnRampMoniker Id="ce6f4b1b-9ecf-4704-bf8d-8cf4a7ecc34f" />
+      <nodes>
+        <itineraryServiceShapeMoniker Id="a0a4aeac-3924-417b-957e-fd21c2671056" />
+        <onRampShapeMoniker Id="2ca5671c-4339-4dda-9a10-6f433c7e7a22" />
+      </nodes>
+    </connector>
+  </nestedChildShapes>
+</itineraryDslDiagram>
